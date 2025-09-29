@@ -1,6 +1,6 @@
 /*
 WAP to input a character and check whether it is an
- uppercase alphabet, lower alphabet,digit or special character.
+uppercase alphabet, lower alphabet,digit or special character.
 */
 
  #include <stdio.h>
