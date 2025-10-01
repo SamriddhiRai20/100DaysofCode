@@ -1,4 +1,4 @@
-//WAP to delete an element from an array.
+//Delete an element from an array.
 
 #include <stdio.h>
 
