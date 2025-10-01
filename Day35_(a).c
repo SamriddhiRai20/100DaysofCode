@@ -1,4 +1,4 @@
-//WAP to find the second largest elemnt in an array.
+//Find the second largest elemnt in an array.
 
 #include <stdio.h>
 
