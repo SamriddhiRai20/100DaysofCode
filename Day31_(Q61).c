@@ -1,4 +1,4 @@
-//WAP to search for an element un an array using linear search.
+//WAP to search for an element in an array using linear search.
 
 #include <stdio.h>
 
