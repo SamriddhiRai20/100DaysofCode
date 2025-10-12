@@ -1,14 +1,20 @@
+/*
+    WAP to find the 1's complement of a binary number and print it.
+*/
+
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
     char binary[100];
 
     printf("Enter a binary number: ");
     scanf("%s", binary);
 
     // Convert to 1's complement
-    for (int i = 0; i < strlen(binary); i++) {
+    for (int i = 0; i < strlen(binary); i++) 
+    {
         if (binary[i] == '0')
             binary[i] = '1';
         else if (binary[i] == '1')
