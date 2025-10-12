@@ -1,13 +1,19 @@
+/*
+Write a program to take a number as input and print its equivalent binary representation.
+*/
+
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int num, i;
     int binary[32]; 
 
     printf("Enter a number:\n ");
     scanf("%d", &num);
 
-    if (num == 0) {
+    if (num == 0) 
+    {
         printf("Binary: 0\n");
         return 0;
     }
@@ -16,7 +22,8 @@ int main() {
     int n = num;
 
     
-    while (n > 0) {
+    while (n > 0) 
+    {
         binary[index] = n % 2;
         n = n / 2;
         index++;
@@ -24,7 +31,8 @@ int main() {
 
     printf("Binary representation of %d is: ", num);
 
-    for (i = index - 1; i >= 0; i--) {
+    for (i = index - 1; i >= 0; i--)
+    {
         printf("%d", binary[i]);
     }
 
