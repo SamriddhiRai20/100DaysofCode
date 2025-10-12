@@ -1,7 +1,10 @@
+//Check if one string is a rotation of another.
+
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char str1[100], str2[100], temp[200];
 
     printf("Enter first string:\n");
@@ -10,7 +13,8 @@ int main() {
     gets(str2);
 
     
-    if (strlen(str1) != strlen(str2)) {
+    if (strlen(str1) != strlen(str2))
+    {
         printf("The strings are NOT rotations of each other.\n");
         return 0;
     }
@@ -21,10 +25,11 @@ int main() {
 
     
     if (strstr(temp, str2) != NULL)
-        printf("The strings ARE rotations of each other.\n");
+        printf("The strings are rotations of each other.\n");
     else
-        printf("The strings are NOT rotations of each other.\n");
+        printf("The strings are N rotations of each other.\n");
 
     return 0;
 }
+
 
