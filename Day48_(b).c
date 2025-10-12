@@ -1,10 +1,14 @@
+//Reverse each word in a sentence without changing the word order.
+
 #include <stdio.h>
 #include <string.h>
 
 
-void reverseWord(char *start, char *end) {
+void reverseWord(char *start, char *end)
+{
     char temp;
-    while (start < end) {
+    while (start < end)
+    {
         temp = *start;
         *start = *end;
         *end = temp;
@@ -13,7 +17,8 @@ void reverseWord(char *start, char *end) {
     }
 }
 
-int main() {
+int main()
+{
     char sentence[200];
     char *word_start = NULL;
     int i = 0;
@@ -21,14 +26,17 @@ int main() {
     printf("Enter a sentence:\n ");
     gets(sentence);  
 
-    while (1) {
+    while (1) 
+    {
 
-        if (word_start == NULL && sentence[i] != ' ' && sentence[i] != '\0') {
+        if (word_start == NULL && sentence[i] != ' ' && sentence[i] != '\0')
+        {
             word_start = &sentence[i];
         }
 
     
-        if ((sentence[i] == ' ' || sentence[i] == '\0') && word_start != NULL) {
+        if ((sentence[i] == ' ' || sentence[i] == '\0') && word_start != NULL)
+        {
             reverseWord(word_start, &sentence[i - 1]);
             word_start = NULL;
         }
