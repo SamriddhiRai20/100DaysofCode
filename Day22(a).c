@@ -1,4 +1,4 @@
-//WAP to check if a number is a perfect number.
+//WAP to check if a number is a strong number.
 
 #include <stdio.h>
 
