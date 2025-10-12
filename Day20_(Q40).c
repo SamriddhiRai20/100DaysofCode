@@ -9,7 +9,7 @@ int main()
 {
     char binary[100];
 
-    printf("Enter a binary number: ");
+    printf("Enter a binary number: \n");
     scanf("%s", binary);
 
     // Convert to 1's complement
@@ -19,7 +19,8 @@ int main()
             binary[i] = '1';
         else if (binary[i] == '1')
             binary[i] = '0';
-        else {
+        else 
+        {
             printf("Invalid binary number.\n");
             return 0;
         }
