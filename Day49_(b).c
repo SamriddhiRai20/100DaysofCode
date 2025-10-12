@@ -1,8 +1,11 @@
+//Print initials of a name with the surname displayed in full.
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
     char name[100];
     int len, i, lastSpace = -1;
 
@@ -12,7 +15,8 @@ int main() {
     len = strlen(name);
 
     
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < len; i++) 
+    {
         if (name[i] == ' ')
             lastSpace = i;
     }
@@ -22,7 +26,8 @@ int main() {
     if (name[0] != ' ')
         printf("%c.", toupper(name[0]));
 
-    for (i = 1; i < lastSpace; i++) {
+    for (i = 1; i < lastSpace; i++) 
+    {
         if (name[i] == ' ' && name[i + 1] != ' ' && name[i + 1] != '\0')
             printf("%c.", toupper(name[i + 1]));
     }
