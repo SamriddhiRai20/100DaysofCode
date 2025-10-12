@@ -1,7 +1,10 @@
+//Print all sub-strings of a string
+
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
     char str[100];
     int len, i, j, k;
 
@@ -12,13 +15,16 @@ int main() {
 
     printf("\nAll substrings of the string are:\n");
 
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < len; i++) 
+    {
         
-        for (j = i; j < len; j++) {
+        for (j = i; j < len; j++)
+            {
             
-            for (k = i; k <= j; k++) {
+            for (k = i; k <= j; k++)
+                {
                 printf("%c", str[k]);
-            }
+                }
             printf("\n");
         }
     }
