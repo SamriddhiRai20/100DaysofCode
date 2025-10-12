@@ -1,8 +1,11 @@
+//Print the initials of a name.
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
-int main() {
+int main() 
+{
     char name[100];
     int i;
 
@@ -16,7 +19,8 @@ int main() {
         printf("%c", toupper(name[0]));
 
 
-    for (i = 1; name[i] != '\0'; i++) {
+    for (i = 1; name[i] != '\0'; i++)
+        {
         
         if (name[i] == ' ' && name[i + 1] != ' ' && name[i + 1] != '\0') {
             printf("%c", toupper(name[i + 1]));
